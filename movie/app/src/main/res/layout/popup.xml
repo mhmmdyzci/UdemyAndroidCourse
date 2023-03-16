@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+   android:background="@drawable/carclebackground">
+
+    <TextView
+        android:id="@+id/selectedUserMail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/selectedMovieName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/selectedUserMail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/selectedMovieGenre"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/selectedMovieName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/selectedMovieInformation"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/selectedMovieGenre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/like"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedMovieInformation"
+        android:layout_alignRight="@+id/selectedMovieInformation"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="40dp"
+        android:onClick="yesWatch"
+        android:text="I like" />
+
+    <Button
+        android:id="@+id/dontLıke"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedMovieInformation"
+        android:layout_alignLeft="@+id/selectedMovieInformation"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="21dp"
+        android:onClick="noWatch"
+        android:text="Don't like" />
+
+
+</RelativeLayout>
